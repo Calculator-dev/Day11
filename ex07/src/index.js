@@ -8,20 +8,15 @@ var myArray = [
 
 
 function largestNumFromArr(arr) {
-    var random = [...arr]
+    var random = [...arr];
     var maxNumArray = [];
 
 
     for (var i = 0; i < random.length; i++) {
-
         maxNumArray.push(Math.max(...random[i]));
     }
-
-
     return maxNumArray;
 }
-
-
 
 console.log(largestNumFromArr(myArray));
 module.exports = largestNumFromArr;

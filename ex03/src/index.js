@@ -4,12 +4,9 @@ function myArrayFunction(myPets) {
     var myNewPets = [...myPets];
 
     myNewPets.push("Bird", "Fish");
-    myNewPets.shift();
-    var firstPet = myNewPets;
-    myNewPets.pop();
-    var lastPet = myNewPets;
+    var firstPet = myNewPets.shift();
+    var lastPet = myNewPets.pop();
     myNewPets.unshift("Lion");
-    
     return myNewPets;
 }
 
